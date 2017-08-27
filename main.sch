@@ -27,7 +27,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
@@ -69,9 +69,681 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Hidden" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Changes" color="12" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
+<library name="ArduinoNanoV30">
+<packages>
+<package name="ARDUINO_NANO">
+<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;
+
+&lt;p&gt;The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;</description>
+<hole x="-22.86" y="-7.62" drill="1.778"/>
+<pad name="1" x="-20.32" y="-7.62" drill="0.8" shape="square"/>
+<pad name="2" x="-17.78" y="-7.62" drill="0.8"/>
+<pad name="3" x="-15.24" y="-7.62" drill="0.8"/>
+<pad name="4" x="-12.7" y="-7.62" drill="0.8"/>
+<pad name="5" x="-10.16" y="-7.62" drill="0.8"/>
+<pad name="6" x="-7.62" y="-7.62" drill="0.8"/>
+<pad name="7" x="-5.08" y="-7.62" drill="0.8"/>
+<pad name="8" x="-2.54" y="-7.62" drill="0.8"/>
+<pad name="9" x="0" y="-7.62" drill="0.8"/>
+<pad name="10" x="2.54" y="-7.62" drill="0.8"/>
+<pad name="11" x="5.08" y="-7.62" drill="0.8"/>
+<pad name="12" x="7.62" y="-7.62" drill="0.8"/>
+<pad name="13" x="10.16" y="-7.62" drill="0.8"/>
+<pad name="14" x="12.7" y="-7.62" drill="0.8"/>
+<pad name="15" x="15.24" y="-7.62" drill="0.8"/>
+<pad name="16" x="15.24" y="7.62" drill="0.8"/>
+<pad name="17" x="12.7" y="7.62" drill="0.8"/>
+<pad name="18" x="10.16" y="7.62" drill="0.8"/>
+<pad name="19" x="7.62" y="7.62" drill="0.8"/>
+<pad name="20" x="5.08" y="7.62" drill="0.8"/>
+<pad name="21" x="2.54" y="7.62" drill="0.8"/>
+<pad name="22" x="0" y="7.62" drill="0.8"/>
+<pad name="23" x="-2.54" y="7.62" drill="0.8"/>
+<pad name="24" x="-5.08" y="7.62" drill="0.8"/>
+<pad name="25" x="-7.62" y="7.62" drill="0.8"/>
+<pad name="26" x="-10.16" y="7.62" drill="0.8"/>
+<pad name="27" x="-12.7" y="7.62" drill="0.8"/>
+<pad name="28" x="-15.24" y="7.62" drill="0.8"/>
+<pad name="29" x="-17.78" y="7.62" drill="0.8"/>
+<pad name="30" x="-20.32" y="7.62" drill="0.8"/>
+<hole x="-22.86" y="7.62" drill="1.778"/>
+<hole x="17.78" y="7.62" drill="1.778"/>
+<hole x="17.78" y="-7.62" drill="1.778"/>
+<wire x1="-24.13" y1="8.89" x2="17.78" y2="8.89" width="0.127" layer="21"/>
+<wire x1="17.78" y1="8.89" x2="19.05" y2="8.89" width="0.127" layer="21"/>
+<wire x1="19.05" y1="8.89" x2="19.05" y2="7.62" width="0.127" layer="21"/>
+<wire x1="19.05" y1="7.62" x2="19.05" y2="3.81" width="0.127" layer="21"/>
+<wire x1="19.05" y1="3.81" x2="19.05" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-3.81" x2="19.05" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-7.62" x2="19.05" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-8.89" x2="17.78" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-8.89" x2="-22.86" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="-8.89" x2="-24.13" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="-8.89" x2="-24.13" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="-7.62" x2="-24.13" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="2.54" x2="-24.13" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-24.13" y1="2.54" x2="-25.4" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="2.54" x2="-25.4" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-2.54" x2="-19.05" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="2.54" x2="-24.13" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-2.54" x2="-25.4" y2="-2.54" width="0.127" layer="21"/>
+<text x="-17.78" y="0" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<text x="-17.78" y="-2.54" size="1.27" layer="21" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.79605" width="0.127" layer="21"/>
+<text x="2.54" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">Reset</text>
+<text x="-20.32" y="-6.35" size="1.016" layer="21" font="vector">1</text>
+<text x="-21.59" y="0" size="0.6096" layer="21" font="vector" rot="R270" align="center">Mini-B
+USB</text>
+<wire x1="19.05" y1="3.81" x2="13.97" y2="3.81" width="0.127" layer="21"/>
+<wire x1="13.97" y1="3.81" x2="13.97" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-3.81" x2="19.05" y2="-3.81" width="0.127" layer="21"/>
+<circle x="17.78" y="-2.54" radius="0.8" width="0.127" layer="21"/>
+<circle x="17.78" y="0" radius="0.8" width="0.127" layer="21"/>
+<circle x="17.78" y="2.54" radius="0.8" width="0.127" layer="21"/>
+<circle x="15.24" y="2.54" radius="0.8" width="0.127" layer="21"/>
+<circle x="17.78" y="0" radius="0.8" width="0.127" layer="21"/>
+<circle x="15.24" y="0" radius="0.8" width="0.127" layer="21"/>
+<circle x="15.24" y="-2.54" radius="0.8" width="0.127" layer="21"/>
+<text x="12.7" y="1.27" size="0.8128" layer="21" font="vector" rot="SR270">ICSP</text>
+<text x="17.78" y="-4.445" size="1.016" layer="21" font="vector" rot="SR270">1</text>
+<polygon width="0.127" layer="21">
+<vertex x="15.24" y="6.35"/>
+<vertex x="13.97" y="5.08"/>
+<vertex x="16.51" y="5.08"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="12.7" y="5.08"/>
+<vertex x="13.97" y="6.35"/>
+<vertex x="11.43" y="6.35"/>
+</polygon>
+<text x="-22.86" y="-1.27" size="0.0508" layer="21" font="vector" ratio="1" rot="R90">This library was created by Esp. Marco-Luis SALCEDO TOVAR.
+Please report any errors or suggestions to: YV1HX@CANTV.NET
+Thanks you!!!</text>
+<wire x1="-24.13" y1="7.62" x2="-21.59" y2="7.62" width="0.015875" layer="21"/>
+<wire x1="-22.86" y1="8.89" x2="-22.86" y2="6.35" width="0.015875" layer="21"/>
+<wire x1="-24.13" y1="-7.62" x2="-21.59" y2="-7.62" width="0.015875" layer="21"/>
+<wire x1="-22.86" y1="-6.35" x2="-22.86" y2="-8.89" width="0.015875" layer="21"/>
+<wire x1="17.78" y1="-8.89" x2="17.78" y2="-6.35" width="0.015875" layer="21"/>
+<wire x1="16.51" y1="-7.62" x2="19.05" y2="-7.62" width="0.015875" layer="21"/>
+<wire x1="17.78" y1="6.35" x2="17.78" y2="8.89" width="0.015875" layer="21"/>
+<wire x1="16.51" y1="7.62" x2="19.05" y2="7.62" width="0.015875" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ARDUINO_NANO">
+<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Overview:&lt;/b&gt;&lt;br&gt;
+
+&lt;p&gt;The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x) or ATmega168 (Arduino Nano 2.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.&lt;br&gt;
+The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;
+
+&lt;table border="1" style="width:auto"&gt;
+&lt;tr&gt;
+  &lt;th colspan="2"&gt;&lt;b&gt;General specifications:&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;th&gt;Item&lt;/th&gt;
+    &lt;th&gt;Value&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Microcontroller&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;Atmel ATmega168 or ATmega328&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Operating Voltage (logic level)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;5 V&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Input Voltage (recommended)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;7-12 V&lt;/center&gt;&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Input Voltage (limits)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;6-20 V&lt;/center&gt;&lt;/td&gt;		
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Digital I/O Pins&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;14 (of which 6 provide PWM output)&lt;/center&gt;&lt;/td&gt;		
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Analog Input Pins&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;DC Current per I/O Pin&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;40 mA&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Flash Memory&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;16 KB (ATmega168) or 32 KB (ATmega328) of which 2 KB used by bootloader&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;SRAM&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;1 KB (ATmega168) or 2 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;EEPROM&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;512 bytes (ATmega168) or 1 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Clock Speed&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;16 MHz&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Dimensions (Inches) &lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;0.73" x 1.70"&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Dimensions (mm) &lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;18mm x 45mm&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Overall height&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;About 9 mm (not including pins)&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Weigth&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;5 g&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Power:&lt;/b&gt;&lt;br&gt;
+
+The Arduino Nano can be powered via the Mini-B USB connection, 6-20V unregulated external power supply (pin 30), or 5V regulated external power supply (pin 27).&lt;br&gt;
+The power source is automatically selected to the highest voltage source.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Memory:&lt;/b&gt;&lt;br&gt;
+
+The ATmega168 has 16 KB of flash memory for storing code (of which 2 KB is used for the bootloader); the ATmega328 has 32 KB, (also with 2 KB used for the bootloader).&lt;br&gt;
+The ATmega168 has 1 KB of SRAM and 512 bytes of EEPROM (which can be read and written with the EEPROM library); the ATmega328 has 2 KB of SRAM and 1 KB of EEPROM.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Input and Output:&lt;/b&gt;&lt;br&gt;
+
+Each of the 14 digital pins on the Nano can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions.&lt;br&gt;
+They operate at 5 volts.&lt;br&gt;
+Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions.&lt;br&gt;&lt;br&gt;
+
+&lt;a href="https://www.arduino.cc/en/Main/ArduinoBoardNano"&gt;Visit Arduino - ArduinoBoardNano&lt;/a&gt;</description>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="25.4" x2="-5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="25.4" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<pin name="D1/TX" x="-20.32" y="22.86" length="middle"/>
+<pin name="D0/RX" x="-20.32" y="20.32" length="middle"/>
+<pin name="!RESET@1" x="-20.32" y="17.78" length="middle" direction="in" function="dot"/>
+<pin name="GND@1" x="-20.32" y="15.24" length="middle" direction="pwr"/>
+<pin name="D2/INT0" x="-20.32" y="12.7" length="middle"/>
+<pin name="D3/INT1" x="-20.32" y="10.16" length="middle"/>
+<pin name="D4/T0" x="-20.32" y="7.62" length="middle"/>
+<pin name="D5/T1" x="-20.32" y="5.08" length="middle"/>
+<pin name="D6/AIN0" x="-20.32" y="2.54" length="middle"/>
+<pin name="D7/AIN1" x="-20.32" y="0" length="middle"/>
+<pin name="D8/CLK0" x="-20.32" y="-2.54" length="middle"/>
+<pin name="D9/OC1A" x="-20.32" y="-5.08" length="middle"/>
+<pin name="D10/OC1B/!SS" x="-20.32" y="-7.62" length="middle"/>
+<pin name="D11/MOSI" x="-20.32" y="-10.16" length="middle"/>
+<pin name="D12/MISO" x="-20.32" y="-12.7" length="middle"/>
+<pin name="SCK/D13" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="3V3" x="20.32" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="AREF" x="20.32" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="ADC0/A0" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="ADC1/A1" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="ADC2/A2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="ADC3/A3" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="ADC4/SDA/A4" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="ADC5/SCL/A5" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="ADC6/A6" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="ADC7/A7" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="5V" x="20.32" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="!RESET@2" x="20.32" y="17.78" length="middle" direction="in" function="dot" rot="R180"/>
+<pin name="GND@2" x="20.32" y="20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="VIN" x="20.32" y="22.86" length="middle" direction="pwr" rot="R180"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-16.51" x2="2.54" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-16.51" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<text x="0" y="-12.7" size="0.8128" layer="94" font="vector" align="center">Mini-B
+USB</text>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<text x="0" y="0" size="0.8128" layer="94" font="vector" rot="R180" align="center">RESET
+BUTTON</text>
+<text x="-15.24" y="-20.32" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="25.4" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="20.32" x2="5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="20.32" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<text x="-2.54" y="17.78" size="1.6764" layer="94" font="vector">ICSP</text>
+<circle x="-2.54" y="21.59" radius="0.762" width="0.254" layer="94"/>
+<circle x="0" y="24.13" radius="0.762" width="0.254" layer="94"/>
+<circle x="2.54" y="24.13" radius="0.762" width="0.254" layer="94"/>
+<circle x="-2.54" y="24.13" radius="0.762" width="0.254" layer="94"/>
+<circle x="2.54" y="21.59" radius="0.762" width="0.254" layer="94"/>
+<circle x="0" y="21.59" radius="0.762" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="-15.24" y="22.86"/>
+<vertex x="-13.97" y="24.13"/>
+<vertex x="-13.97" y="21.59"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-15.24" y="21.59"/>
+<vertex x="-13.97" y="20.32"/>
+<vertex x="-15.24" y="19.05"/>
+</polygon>
+<text x="6.35" y="24.13" size="0.8128" layer="94" font="vector" align="bottom-right">1</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARDUINO_NANO" prefix="ARDUINO_NANO" uservalue="yes">
+<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Overview:&lt;/b&gt;&lt;br&gt;
+
+&lt;p&gt;The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x) or ATmega168 (Arduino Nano 2.x). &lt;br&gt;It has more or less the same functionality of the Arduino Duemilanove, but in a different package.&lt;br&gt;
+It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.&lt;br&gt;
+The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;
+
+&lt;table border="1" style="width:auto"&gt;
+&lt;tr&gt;
+  &lt;th colspan="2"&gt;&lt;b&gt;General specifications:&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;th&gt;Item&lt;/th&gt;
+    &lt;th&gt;Value&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Microcontroller&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;Atmel ATmega168 or ATmega328&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Operating Voltage (logic level)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;5 V&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Input Voltage (recommended)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;7-12 V&lt;/center&gt;&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Input Voltage (limits)&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;6-20 V&lt;/center&gt;&lt;/td&gt;		
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Digital I/O Pins&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;14 (of which 6 provide PWM output)&lt;/center&gt;&lt;/td&gt;		
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Analog Input Pins&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;DC Current per I/O Pin&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;40 mA&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Flash Memory&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;16 KB (ATmega168) or 32 KB (ATmega328) of which 2 KB used by bootloader&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;SRAM&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;1 KB (ATmega168) or 2 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;		
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;EEPROM&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;512 bytes (ATmega168) or 1 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Clock Speed&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;16 MHz&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Dimensions (Inches) &lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;0.73" x 1.70"&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Dimensions (mm) &lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;18mm x 45mm&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Overall height&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;About 9 mm (not including pins)&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;center&gt;Weigth&lt;/center&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;center&gt;5 g&lt;/center&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;Power:&lt;/b&gt;&lt;br&gt;
+
+&lt;p&gt;The Arduino Nano can be powered via the Mini-B USB connection, 6-20V unregulated external power supply (pin 30), or 5V regulated external power supply (pin 27).&lt;br&gt;
+The power source is automatically selected to the highest voltage source.&lt;/p&gt;&lt;br&gt;
+
+&lt;b&gt;Memory:&lt;/b&gt;&lt;br&gt;
+
+&lt;p&gt;The ATmega168 has 16 KB of flash memory for storing code (of which 2 KB is used for the bootloader); the ATmega328 has 32 KB, (also with 2 KB used for the bootloader).&lt;br&gt;
+The ATmega168 has 1 KB of SRAM and 512 bytes of EEPROM (which can be read and written with the EEPROM library); the ATmega328 has 2 KB of SRAM and 1 KB of EEPROM.&lt;/p&gt;&lt;br&gt;
+
+&lt;b&gt;Input and Output:&lt;/b&gt;&lt;br&gt;
+
+&lt;p&gt;Each of the 14 digital pins on the Nano can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions.&lt;br&gt;
+They operate at 5 volts.&lt;br&gt;
+Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions.&lt;/p&gt;&lt;br&gt;
+
+&lt;a href="https://www.arduino.cc/en/Main/ArduinoBoardNano"&gt;Visit Arduino - ArduinoBoardNano&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ARDUINO_NANO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ARDUINO_NANO">
+<connects>
+<connect gate="G$1" pin="!RESET@1" pad="18"/>
+<connect gate="G$1" pin="!RESET@2" pad="13"/>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="5V" pad="12"/>
+<connect gate="G$1" pin="ADC0/A0" pad="4"/>
+<connect gate="G$1" pin="ADC1/A1" pad="5"/>
+<connect gate="G$1" pin="ADC2/A2" pad="6"/>
+<connect gate="G$1" pin="ADC3/A3" pad="7"/>
+<connect gate="G$1" pin="ADC4/SDA/A4" pad="8"/>
+<connect gate="G$1" pin="ADC5/SCL/A5" pad="9"/>
+<connect gate="G$1" pin="ADC6/A6" pad="10"/>
+<connect gate="G$1" pin="ADC7/A7" pad="11"/>
+<connect gate="G$1" pin="AREF" pad="3"/>
+<connect gate="G$1" pin="D0/RX" pad="17"/>
+<connect gate="G$1" pin="D1/TX" pad="16"/>
+<connect gate="G$1" pin="D10/OC1B/!SS" pad="28"/>
+<connect gate="G$1" pin="D11/MOSI" pad="29"/>
+<connect gate="G$1" pin="D12/MISO" pad="30"/>
+<connect gate="G$1" pin="D2/INT0" pad="20"/>
+<connect gate="G$1" pin="D3/INT1" pad="21"/>
+<connect gate="G$1" pin="D4/T0" pad="22"/>
+<connect gate="G$1" pin="D5/T1" pad="23"/>
+<connect gate="G$1" pin="D6/AIN0" pad="24"/>
+<connect gate="G$1" pin="D7/AIN1" pad="25"/>
+<connect gate="G$1" pin="D8/CLK0" pad="26"/>
+<connect gate="G$1" pin="D9/OC1A" pad="27"/>
+<connect gate="G$1" pin="GND@1" pad="19"/>
+<connect gate="G$1" pin="GND@2" pad="14"/>
+<connect gate="G$1" pin="SCK/D13" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-ptr500" urn="urn:adsk.eagle:library:181">
+<description>&lt;b&gt;PTR Connectors&lt;/b&gt;&lt;p&gt;
+Aug. 2004 / PTR Meßtechnik:&lt;br&gt;
+Die Bezeichnung der Serie AK505 wurde geändert.&lt;br&gt;
+Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
+&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Alte Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Neue Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2-5.0-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2DS,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2DS-5.0-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AKZ505/2,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AKZ500/2-5.08-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TABLE&gt;
+
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="AK500/2" urn="urn:adsk.eagle:footprint:9854/1" library_version="1">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.588" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="3.175" x2="-5.588" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="2.032" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<circle x="2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="-2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<text x="-5.08" y="4.445" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
+<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="AK500/2" urn="urn:adsk.eagle:package:9880/1" type="box" library_version="1">
+<description>CONNECTOR</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="KL" urn="urn:adsk.eagle:symbol:9841/1" library_version="1">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="KLV" urn="urn:adsk.eagle:symbol:9842/1" library_version="1">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AK500/2" urn="urn:adsk.eagle:component:9906/1" prefix="X" uservalue="yes" library_version="1">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="KLV" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="AK500/2">
+<connects>
+<connect gate="-1" pin="KL" pad="1"/>
+<connect gate="-2" pin="KL" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9880/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="transistor-power" urn="urn:adsk.eagle:library:400">
+<description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO220AH" urn="urn:adsk.eagle:footprint:29379/1" library_version="1">
+<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm</description>
+<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.1524" layer="21"/>
+<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.1524" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
+<circle x="0" y="11.176" radius="1.8034" width="0.1524" layer="21"/>
+<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
+<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
+<pad name="B" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<pad name="C" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<pad name="E" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
+<text x="-3.81" y="5.207" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.937" y="2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="7.874" size="1.016" layer="21" ratio="10">A17,5mm</text>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="21"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="21"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="21"/>
+<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
+<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
+<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
+<hole x="0" y="11.176" drill="3.302"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO220AH" urn="urn:adsk.eagle:package:29488/1" type="box" library_version="1">
+<description>Molded Package
+grid 2.54 mm</description>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="N-DAR" urn="urn:adsk.eagle:symbol:29365/1" library_version="1">
+<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.032" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.032" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.016" x2="2.286" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-2.286" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.778" x2="1.778" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="3.175" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-1.778" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.27" x2="2.032" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.032" x2="1.524" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-1.778" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.381" y1="-2.54" x2="0.381" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TIP120" urn="urn:adsk.eagle:component:29559/1" prefix="Q" library_version="1">
+<description>&lt;b&gt;NPN DARLINGTON TRANSISTOR&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="N-DAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220AH">
+<connects>
+<connect gate="1" pin="B" pad="B"/>
+<connect gate="1" pin="C" pad="C"/>
+<connect gate="1" pin="E" pad="E"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29488/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="resistor" urn="urn:adsk.eagle:library:348">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -4095,349 +4767,101 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="microchip" urn="urn:adsk.eagle:library:294">
-<description>&lt;b&gt;Microchip PIC Microcontrollers and other Devices&lt;/b&gt;&lt;p&gt;
-Based on the following sources :
-&lt;ul&gt;
-&lt;li&gt;Microchip Data Book, 1993
-&lt;li&gt;THE EMERGING WORLD STANDARD, 1995/1996
-&lt;li&gt;Microchip, Technical Library CD-ROM, June 1998
-&lt;li&gt;www.microchip.com
-&lt;/ul&gt;
+<library name="con-jack" urn="urn:adsk.eagle:library:154">
+<description>&lt;b&gt;Jacks&lt;/b&gt;&lt;p&gt;
+Power Connectors&lt;br&gt;
+Phone Connectors&lt;br&gt;
+Cinch Connectors&lt;br&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TQFP64-10X10" urn="urn:adsk.eagle:footprint:20620/1" library_version="2">
-<description>&lt;b&gt;Thin Quad Flat Pack&lt;/b&gt;&lt;p&gt;
-package type TQ</description>
-<wire x1="-4.8" y1="4.4" x2="-4.4" y2="4.8" width="0.2032" layer="21"/>
-<wire x1="-4.4" y1="4.8" x2="4.4" y2="4.8" width="0.2032" layer="21"/>
-<wire x1="4.4" y1="4.8" x2="4.8" y2="4.4" width="0.2032" layer="21"/>
-<wire x1="4.8" y1="4.4" x2="4.8" y2="-4.4" width="0.2032" layer="21"/>
-<wire x1="4.8" y1="-4.4" x2="4.4" y2="-4.8" width="0.2032" layer="21"/>
-<wire x1="4.4" y1="-4.8" x2="-4.4" y2="-4.8" width="0.2032" layer="21"/>
-<wire x1="-4.4" y1="-4.8" x2="-4.8" y2="-4.4" width="0.2032" layer="21"/>
-<wire x1="-4.8" y1="-4.4" x2="-4.8" y2="4.4" width="0.2032" layer="21"/>
-<circle x="-4" y="4" radius="0.2827" width="0.254" layer="21"/>
-<smd name="1" x="-5.7" y="3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="2" x="-5.7" y="3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="3" x="-5.7" y="2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="4" x="-5.7" y="2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="5" x="-5.7" y="1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="6" x="-5.7" y="1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="7" x="-5.7" y="0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="8" x="-5.7" y="0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="9" x="-5.7" y="-0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="10" x="-5.7" y="-0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="11" x="-5.7" y="-1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="12" x="-5.7" y="-1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="13" x="-5.7" y="-2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="14" x="-5.7" y="-2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="15" x="-5.7" y="-3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="16" x="-5.7" y="-3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="17" x="-3.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="18" x="-3.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="19" x="-2.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="20" x="-2.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="21" x="-1.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="22" x="-1.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="23" x="-0.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="24" x="-0.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="25" x="0.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="26" x="0.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="27" x="1.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="28" x="1.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="29" x="2.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="30" x="2.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="31" x="3.25" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="32" x="3.75" y="-5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="33" x="5.7" y="-3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="34" x="5.7" y="-3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="35" x="5.7" y="-2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="36" x="5.7" y="-2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="37" x="5.7" y="-1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="38" x="5.7" y="-1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="39" x="5.7" y="-0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="40" x="5.7" y="-0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="41" x="5.7" y="0.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="42" x="5.7" y="0.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="43" x="5.7" y="1.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="44" x="5.7" y="1.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="45" x="5.7" y="2.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="46" x="5.7" y="2.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="47" x="5.7" y="3.25" dx="1.2" dy="0.3" layer="1"/>
-<smd name="48" x="5.7" y="3.75" dx="1.2" dy="0.3" layer="1"/>
-<smd name="49" x="3.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="50" x="3.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="51" x="2.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="52" x="2.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="53" x="1.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="54" x="1.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="55" x="0.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="56" x="0.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="57" x="-0.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="58" x="-0.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="59" x="-1.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="60" x="-1.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="61" x="-2.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="62" x="-2.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="63" x="-3.25" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<smd name="64" x="-3.75" y="5.7" dx="0.3" dy="1.2" layer="1"/>
-<text x="-3.81" y="6.604" size="1.778" layer="25">&gt;NAME</text>
-<text x="-4.064" y="-1.7701" size="1.778" layer="27">&gt;VALUE</text>
-<rectangle x1="-6" y1="3.65" x2="-4.8" y2="3.85" layer="21"/>
-<rectangle x1="-6" y1="3.15" x2="-4.8" y2="3.35" layer="21"/>
-<rectangle x1="-6" y1="2.65" x2="-4.8" y2="2.85" layer="21"/>
-<rectangle x1="-6" y1="2.15" x2="-4.8" y2="2.35" layer="21"/>
-<rectangle x1="-6" y1="1.65" x2="-4.8" y2="1.85" layer="21"/>
-<rectangle x1="-6" y1="1.15" x2="-4.8" y2="1.35" layer="21"/>
-<rectangle x1="-6" y1="0.65" x2="-4.8" y2="0.85" layer="21"/>
-<rectangle x1="-6" y1="0.15" x2="-4.8" y2="0.35" layer="21"/>
-<rectangle x1="-6" y1="-0.35" x2="-4.8" y2="-0.15" layer="21"/>
-<rectangle x1="-6" y1="-0.85" x2="-4.8" y2="-0.65" layer="21"/>
-<rectangle x1="-6" y1="-1.35" x2="-4.8" y2="-1.15" layer="21"/>
-<rectangle x1="-6" y1="-1.85" x2="-4.8" y2="-1.65" layer="21"/>
-<rectangle x1="-6" y1="-2.35" x2="-4.8" y2="-2.15" layer="21"/>
-<rectangle x1="-6" y1="-2.85" x2="-4.8" y2="-2.65" layer="21"/>
-<rectangle x1="-6" y1="-3.35" x2="-4.8" y2="-3.15" layer="21"/>
-<rectangle x1="-6" y1="-3.85" x2="-4.8" y2="-3.65" layer="21"/>
-<rectangle x1="-3.85" y1="-6" x2="-3.65" y2="-4.8" layer="21"/>
-<rectangle x1="-3.35" y1="-6" x2="-3.15" y2="-4.8" layer="21"/>
-<rectangle x1="-2.85" y1="-6" x2="-2.65" y2="-4.8" layer="21"/>
-<rectangle x1="-2.35" y1="-6" x2="-2.15" y2="-4.8" layer="21"/>
-<rectangle x1="-1.85" y1="-6" x2="-1.65" y2="-4.8" layer="21"/>
-<rectangle x1="-1.35" y1="-6" x2="-1.15" y2="-4.8" layer="21"/>
-<rectangle x1="-0.85" y1="-6" x2="-0.65" y2="-4.8" layer="21"/>
-<rectangle x1="-0.35" y1="-6" x2="-0.15" y2="-4.8" layer="21"/>
-<rectangle x1="0.15" y1="-6" x2="0.35" y2="-4.8" layer="21"/>
-<rectangle x1="0.65" y1="-6" x2="0.85" y2="-4.8" layer="21"/>
-<rectangle x1="1.15" y1="-6" x2="1.35" y2="-4.8" layer="21"/>
-<rectangle x1="1.65" y1="-6" x2="1.85" y2="-4.8" layer="21"/>
-<rectangle x1="2.15" y1="-6" x2="2.35" y2="-4.8" layer="21"/>
-<rectangle x1="2.65" y1="-6" x2="2.85" y2="-4.8" layer="21"/>
-<rectangle x1="3.15" y1="-6" x2="3.35" y2="-4.8" layer="21"/>
-<rectangle x1="3.65" y1="-6" x2="3.85" y2="-4.8" layer="21"/>
-<rectangle x1="4.8" y1="-3.85" x2="6" y2="-3.65" layer="21"/>
-<rectangle x1="4.8" y1="-3.35" x2="6" y2="-3.15" layer="21"/>
-<rectangle x1="4.8" y1="-2.85" x2="6" y2="-2.65" layer="21"/>
-<rectangle x1="4.8" y1="-2.35" x2="6" y2="-2.15" layer="21"/>
-<rectangle x1="4.8" y1="-1.85" x2="6" y2="-1.65" layer="21"/>
-<rectangle x1="4.8" y1="-1.35" x2="6" y2="-1.15" layer="21"/>
-<rectangle x1="4.8" y1="-0.85" x2="6" y2="-0.65" layer="21"/>
-<rectangle x1="4.8" y1="-0.35" x2="6" y2="-0.15" layer="21"/>
-<rectangle x1="4.8" y1="0.15" x2="6" y2="0.35" layer="21"/>
-<rectangle x1="4.8" y1="0.65" x2="6" y2="0.85" layer="21"/>
-<rectangle x1="4.8" y1="1.15" x2="6" y2="1.35" layer="21"/>
-<rectangle x1="4.8" y1="1.65" x2="6" y2="1.85" layer="21"/>
-<rectangle x1="4.8" y1="2.15" x2="6" y2="2.35" layer="21"/>
-<rectangle x1="4.8" y1="2.65" x2="6" y2="2.85" layer="21"/>
-<rectangle x1="4.8" y1="3.15" x2="6" y2="3.35" layer="21"/>
-<rectangle x1="4.8" y1="3.65" x2="6" y2="3.85" layer="21"/>
-<rectangle x1="3.65" y1="4.8" x2="3.85" y2="6" layer="21"/>
-<rectangle x1="3.15" y1="4.8" x2="3.35" y2="6" layer="21"/>
-<rectangle x1="2.65" y1="4.8" x2="2.85" y2="6" layer="21"/>
-<rectangle x1="2.15" y1="4.8" x2="2.35" y2="6" layer="21"/>
-<rectangle x1="1.65" y1="4.8" x2="1.85" y2="6" layer="21"/>
-<rectangle x1="1.15" y1="4.8" x2="1.35" y2="6" layer="21"/>
-<rectangle x1="0.65" y1="4.8" x2="0.85" y2="6" layer="21"/>
-<rectangle x1="0.15" y1="4.8" x2="0.35" y2="6" layer="21"/>
-<rectangle x1="-0.35" y1="4.8" x2="-0.15" y2="6" layer="21"/>
-<rectangle x1="-0.85" y1="4.8" x2="-0.65" y2="6" layer="21"/>
-<rectangle x1="-1.35" y1="4.8" x2="-1.15" y2="6" layer="21"/>
-<rectangle x1="-1.85" y1="4.8" x2="-1.65" y2="6" layer="21"/>
-<rectangle x1="-2.35" y1="4.8" x2="-2.15" y2="6" layer="21"/>
-<rectangle x1="-2.85" y1="4.8" x2="-2.65" y2="6" layer="21"/>
-<rectangle x1="-3.35" y1="4.8" x2="-3.15" y2="6" layer="21"/>
-<rectangle x1="-3.85" y1="4.8" x2="-3.65" y2="6" layer="21"/>
+<package name="DCJ0303" urn="urn:adsk.eagle:footprint:7490/1" library_version="1">
+<description>&lt;b&gt;DC POWER JACK&lt;/b&gt; Pad shape changed to LONG 2007.07.26&lt;p&gt;
+Source: DCJ0303.pdf</description>
+<wire x1="1.65" y1="2.6" x2="-1.65" y2="2.6" width="0" layer="46"/>
+<wire x1="-1.65" y1="2.6" x2="-1.65" y2="3.6" width="0" layer="46"/>
+<wire x1="-1.65" y1="3.6" x2="1.65" y2="3.6" width="0" layer="46"/>
+<wire x1="1.65" y1="3.6" x2="1.65" y2="2.6" width="0" layer="46"/>
+<wire x1="5.3" y1="1.4" x2="4.3" y2="1.4" width="0" layer="46"/>
+<wire x1="4.3" y1="1.4" x2="4.3" y2="-1.4" width="0" layer="46"/>
+<wire x1="4.3" y1="-1.4" x2="5.3" y2="-1.4" width="0" layer="46"/>
+<wire x1="5.3" y1="-1.4" x2="5.3" y2="1.4" width="0" layer="46"/>
+<wire x1="1.4" y1="-3.5" x2="-1.4" y2="-3.5" width="0" layer="46"/>
+<wire x1="-1.4" y1="-3.5" x2="-1.4" y2="-2.5" width="0" layer="46"/>
+<wire x1="-1.4" y1="-2.5" x2="1.4" y2="-2.5" width="0" layer="46"/>
+<wire x1="1.4" y1="-2.5" x2="1.4" y2="-3.5" width="0" layer="46"/>
+<wire x1="-4.3" y1="-10.4" x2="4.3" y2="-10.4" width="0.2032" layer="21"/>
+<wire x1="4.3" y1="-10.4" x2="4.3" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="4.3" y1="3.9" x2="-4.3" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="-4.3" y1="3.9" x2="-4.3" y2="-10.4" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="3.9" x2="-4.3" y2="3.9" width="0.2032" layer="21"/>
+<wire x1="4.3" y1="3.9" x2="2.7" y2="3.9" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-10.275" x2="-3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
+<wire x1="3" y1="-10.3" x2="3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2032" layer="51" style="shortdash"/>
+<wire x1="-0.9" y1="-9" x2="-0.9" y2="-4.5" width="0.2032" layer="51" style="shortdash"/>
+<wire x1="0.9" y1="-9" x2="0.9" y2="-4.5" width="0.2032" layer="51" style="shortdash"/>
+<wire x1="-0.9" y1="-9" x2="0.9" y2="-9" width="0.2032" layer="51" curve="166.57811"/>
+<wire x1="4.3" y1="-10.4" x2="4.3" y2="-2.45" width="0.2032" layer="21"/>
+<wire x1="4.3" y1="2.3" x2="4.3" y2="3.9" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="3.1" drill="1" diameter="2" shape="long" rot="R180"/>
+<pad name="3" x="0" y="-3" drill="1" diameter="2" shape="long" rot="R180"/>
+<pad name="2" x="4.8" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
+<text x="6.35" y="-10.16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="TQFP64-10X10" urn="urn:adsk.eagle:package:20805/1" type="box" library_version="2">
-<description>Thin Quad Flat Pack
-package type TQ</description>
+<package3d name="DCJ0303" urn="urn:adsk.eagle:package:7493/1" type="box" library_version="1">
+<description>DC POWER JACK Pad shape changed to LONG 2007.07.26
+Source: DCJ0303.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="PIC18F6XJ10" urn="urn:adsk.eagle:symbol:20674/1" library_version="2">
-<wire x1="-38.1" y1="40.64" x2="40.64" y2="40.64" width="0.254" layer="94"/>
-<wire x1="40.64" y1="40.64" x2="40.64" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="40.64" y1="-38.1" x2="-38.1" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="-38.1" y1="-38.1" x2="-38.1" y2="40.64" width="0.254" layer="94"/>
-<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="RE1/!WR/P2C" x="-40.64" y="20.32" length="short"/>
-<pin name="RE0/!RD/P2D" x="-40.64" y="17.78" length="short"/>
-<pin name="RG0/ECCP3/P3A" x="-40.64" y="15.24" length="short"/>
-<pin name="RG1/TX2/CK2" x="-40.64" y="12.7" length="short"/>
-<pin name="RG2/RX2/DT2" x="-40.64" y="10.16" length="short"/>
-<pin name="RG3/CCP4/P3D" x="-40.64" y="7.62" length="short"/>
-<pin name="!MCLR" x="-40.64" y="5.08" length="short" direction="in"/>
-<pin name="RG4/CCP5/P1D" x="-40.64" y="2.54" length="short"/>
-<pin name="VSS" x="-40.64" y="0" length="short" direction="pwr"/>
-<pin name="VDDCORE/VCAP" x="-40.64" y="-2.54" length="short" direction="pwr"/>
-<pin name="RF7/!SS1" x="-40.64" y="-5.08" length="short"/>
-<pin name="RF6/AN11" x="-40.64" y="-7.62" length="short"/>
-<pin name="RF5/AN10/CVREF" x="-40.64" y="-10.16" length="short"/>
-<pin name="RF4/AN9" x="-40.64" y="-12.7" length="short"/>
-<pin name="RF3/AN8" x="-40.64" y="-15.24" length="short"/>
-<pin name="RF2/AN7/C1OUT" x="-40.64" y="-17.78" length="short"/>
-<pin name="RF1/AN6/C2OUT" x="-17.78" y="-40.64" length="short" rot="R90"/>
-<pin name="ENVREG" x="-15.24" y="-40.64" length="short" direction="in" rot="R90"/>
-<pin name="AVDD" x="-12.7" y="-40.64" length="short" direction="pwr" rot="R90"/>
-<pin name="AVSS" x="-10.16" y="-40.64" length="short" direction="pwr" rot="R90"/>
-<pin name="RA3/AN3/VREF+" x="-7.62" y="-40.64" length="short" rot="R90"/>
-<pin name="RA2/AN2/VREF-" x="-5.08" y="-40.64" length="short" rot="R90"/>
-<pin name="RA1/AN1" x="-2.54" y="-40.64" length="short" rot="R90"/>
-<pin name="RA0/AN0" x="0" y="-40.64" length="short" rot="R90"/>
-<pin name="VSS@1" x="2.54" y="-40.64" length="short" direction="pwr" rot="R90"/>
-<pin name="VDD@1" x="5.08" y="-40.64" length="short" direction="pwr" rot="R90"/>
-<pin name="RA5/AN4" x="7.62" y="-40.64" length="short" rot="R90"/>
-<pin name="RA4/T0CK" x="10.16" y="-40.64" length="short" rot="R90"/>
-<pin name="RC1/T1OSI/ECCP2/P2A" x="12.7" y="-40.64" length="short" rot="R90"/>
-<pin name="RC0/T1OSO/T13CKI" x="15.24" y="-40.64" length="short" rot="R90"/>
-<pin name="RC6/TX1/CK1" x="17.78" y="-40.64" length="short" rot="R90"/>
-<pin name="RC7/RX1/DT1" x="20.32" y="-40.64" length="short" rot="R90"/>
-<pin name="RC2/ECCP1/P1A" x="43.18" y="-17.78" length="short" rot="R180"/>
-<pin name="RC3/SCK1/SCL1" x="43.18" y="-15.24" length="short" rot="R180"/>
-<pin name="RC4/SDI1/SDA1" x="43.18" y="-12.7" length="short" rot="R180"/>
-<pin name="RC5/SDO1" x="43.18" y="-10.16" length="short" rot="R180"/>
-<pin name="RB7/KBI2/PGD" x="43.18" y="-7.62" length="short" rot="R180"/>
-<pin name="VDD" x="43.18" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="OSC1/CLKI" x="43.18" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="OSC2/CLKO" x="43.18" y="0" length="short" direction="out" rot="R180"/>
-<pin name="VSS@2" x="43.18" y="2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="RB6/KBI2/PGC" x="43.18" y="5.08" length="short" rot="R180"/>
-<pin name="RB5/KBI1" x="43.18" y="7.62" length="short" rot="R180"/>
-<pin name="RB4/KBI0" x="43.18" y="10.16" length="short" rot="R180"/>
-<pin name="RB3/INT3" x="43.18" y="12.7" length="short" rot="R180"/>
-<pin name="RB2/INT2" x="43.18" y="15.24" length="short" rot="R180"/>
-<pin name="RB1/INT1" x="43.18" y="17.78" length="short" rot="R180"/>
-<pin name="RB0/INT0/FLT0" x="43.18" y="20.32" length="short" rot="R180"/>
-<pin name="RD7/PSP7/!SS2" x="20.32" y="43.18" length="short" rot="R270"/>
-<pin name="RD6/PSP6/SCK2/SCL2" x="17.78" y="43.18" length="short" rot="R270"/>
-<pin name="RD5/PSP5/SDI2/SDA2" x="15.24" y="43.18" length="short" rot="R270"/>
-<pin name="RD4/PSP4/SDO2" x="12.7" y="43.18" length="short" rot="R270"/>
-<pin name="RD3/PSP3" x="10.16" y="43.18" length="short" rot="R270"/>
-<pin name="RD2/PSP2" x="7.62" y="43.18" length="short" rot="R270"/>
-<pin name="RD1/PSP1" x="5.08" y="43.18" length="short" rot="R270"/>
-<pin name="RD0/PSP0" x="-2.54" y="43.18" length="short" rot="R270"/>
-<pin name="VSS@3" x="2.54" y="43.18" length="short" direction="pwr" rot="R270"/>
-<pin name="VDD@2" x="0" y="43.18" length="short" direction="pwr" rot="R270"/>
-<pin name="RE7/ECCP2/P2A" x="-5.08" y="43.18" length="short" rot="R270"/>
-<pin name="RE6/P1B" x="-7.62" y="43.18" length="short" rot="R270"/>
-<pin name="RE5/P1C" x="-10.16" y="43.18" length="short" rot="R270"/>
-<pin name="RE4/P3B" x="-12.7" y="43.18" length="short" rot="R270"/>
-<pin name="RE3/P3C" x="-15.24" y="43.18" length="short" rot="R270"/>
-<pin name="RE2/!CS/P2B" x="-17.78" y="43.18" length="short" rot="R270"/>
+<symbol name="DC-JACK-SWITCH" urn="urn:adsk.eagle:symbol:7485/1" library_version="1">
+<wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="-0.762" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-3.302" y1="-2.54" x2="-1.778" y2="1.27" layer="94"/>
+<pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="-2.54"/>
+<vertex x="2.032" y="-1.27"/>
+<vertex x="3.048" y="-1.27"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PIC18F6*" urn="urn:adsk.eagle:component:20879/1" prefix="IC" library_version="2">
-<description>&lt;b&gt;PIC18F87J10 FAMILY&lt;/b&gt; 64/80-Pin, High-Performance, 1-Mbit Flash Microcontrollers with nanoWatt Technology&lt;p&gt;
-Source: http://www.microchip.com/ .. 39663c.pdf</description>
+<deviceset name="DCJ0303" urn="urn:adsk.eagle:component:7497/1" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
+Source: DCJ0303.pdf</description>
 <gates>
-<gate name="G$1" symbol="PIC18F6XJ10" x="0" y="0"/>
+<gate name="G$1" symbol="DC-JACK-SWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TQFP64-10X10">
+<device name="" package="DCJ0303">
 <connects>
-<connect gate="G$1" pin="!MCLR" pad="7"/>
-<connect gate="G$1" pin="AVDD" pad="19"/>
-<connect gate="G$1" pin="AVSS" pad="20"/>
-<connect gate="G$1" pin="ENVREG" pad="18"/>
-<connect gate="G$1" pin="OSC1/CLKI" pad="39"/>
-<connect gate="G$1" pin="OSC2/CLKO" pad="40"/>
-<connect gate="G$1" pin="RA0/AN0" pad="24"/>
-<connect gate="G$1" pin="RA1/AN1" pad="23"/>
-<connect gate="G$1" pin="RA2/AN2/VREF-" pad="22"/>
-<connect gate="G$1" pin="RA3/AN3/VREF+" pad="21"/>
-<connect gate="G$1" pin="RA4/T0CK" pad="28"/>
-<connect gate="G$1" pin="RA5/AN4" pad="27"/>
-<connect gate="G$1" pin="RB0/INT0/FLT0" pad="48"/>
-<connect gate="G$1" pin="RB1/INT1" pad="47"/>
-<connect gate="G$1" pin="RB2/INT2" pad="46"/>
-<connect gate="G$1" pin="RB3/INT3" pad="45"/>
-<connect gate="G$1" pin="RB4/KBI0" pad="44"/>
-<connect gate="G$1" pin="RB5/KBI1" pad="43"/>
-<connect gate="G$1" pin="RB6/KBI2/PGC" pad="42"/>
-<connect gate="G$1" pin="RB7/KBI2/PGD" pad="37"/>
-<connect gate="G$1" pin="RC0/T1OSO/T13CKI" pad="30"/>
-<connect gate="G$1" pin="RC1/T1OSI/ECCP2/P2A" pad="29"/>
-<connect gate="G$1" pin="RC2/ECCP1/P1A" pad="33"/>
-<connect gate="G$1" pin="RC3/SCK1/SCL1" pad="34"/>
-<connect gate="G$1" pin="RC4/SDI1/SDA1" pad="35"/>
-<connect gate="G$1" pin="RC5/SDO1" pad="36"/>
-<connect gate="G$1" pin="RC6/TX1/CK1" pad="31"/>
-<connect gate="G$1" pin="RC7/RX1/DT1" pad="32"/>
-<connect gate="G$1" pin="RD0/PSP0" pad="58"/>
-<connect gate="G$1" pin="RD1/PSP1" pad="55"/>
-<connect gate="G$1" pin="RD2/PSP2" pad="54"/>
-<connect gate="G$1" pin="RD3/PSP3" pad="53"/>
-<connect gate="G$1" pin="RD4/PSP4/SDO2" pad="52"/>
-<connect gate="G$1" pin="RD5/PSP5/SDI2/SDA2" pad="51"/>
-<connect gate="G$1" pin="RD6/PSP6/SCK2/SCL2" pad="50"/>
-<connect gate="G$1" pin="RD7/PSP7/!SS2" pad="49"/>
-<connect gate="G$1" pin="RE0/!RD/P2D" pad="2"/>
-<connect gate="G$1" pin="RE1/!WR/P2C" pad="1"/>
-<connect gate="G$1" pin="RE2/!CS/P2B" pad="64"/>
-<connect gate="G$1" pin="RE3/P3C" pad="63"/>
-<connect gate="G$1" pin="RE4/P3B" pad="62"/>
-<connect gate="G$1" pin="RE5/P1C" pad="61"/>
-<connect gate="G$1" pin="RE6/P1B" pad="60"/>
-<connect gate="G$1" pin="RE7/ECCP2/P2A" pad="59"/>
-<connect gate="G$1" pin="RF1/AN6/C2OUT" pad="17"/>
-<connect gate="G$1" pin="RF2/AN7/C1OUT" pad="16"/>
-<connect gate="G$1" pin="RF3/AN8" pad="15"/>
-<connect gate="G$1" pin="RF4/AN9" pad="14"/>
-<connect gate="G$1" pin="RF5/AN10/CVREF" pad="13"/>
-<connect gate="G$1" pin="RF6/AN11" pad="12"/>
-<connect gate="G$1" pin="RF7/!SS1" pad="11"/>
-<connect gate="G$1" pin="RG0/ECCP3/P3A" pad="3"/>
-<connect gate="G$1" pin="RG1/TX2/CK2" pad="4"/>
-<connect gate="G$1" pin="RG2/RX2/DT2" pad="5"/>
-<connect gate="G$1" pin="RG3/CCP4/P3D" pad="6"/>
-<connect gate="G$1" pin="RG4/CCP5/P1D" pad="8"/>
-<connect gate="G$1" pin="VDD" pad="38"/>
-<connect gate="G$1" pin="VDD@1" pad="26"/>
-<connect gate="G$1" pin="VDD@2" pad="57"/>
-<connect gate="G$1" pin="VDDCORE/VCAP" pad="10"/>
-<connect gate="G$1" pin="VSS" pad="9"/>
-<connect gate="G$1" pin="VSS@1" pad="25"/>
-<connect gate="G$1" pin="VSS@2" pad="41"/>
-<connect gate="G$1" pin="VSS@3" pad="56"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:20805/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7493/1"/>
 </package3dinstances>
 <technologies>
-<technology name="5J10">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="PIC18F65J10-I/PT" constant="no"/>
-<attribute name="OC_FARNELL" value="1332280" constant="no"/>
-<attribute name="OC_NEWARK" value="71J7261" constant="no"/>
-</technology>
-<technology name="5J15">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="PIC18F65J15T-I/PT" constant="no"/>
-<attribute name="OC_FARNELL" value="1579611" constant="no"/>
-<attribute name="OC_NEWARK" value="71J7264" constant="no"/>
-</technology>
-<technology name="6J10">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="PIC18F66J10-I/PT" constant="no"/>
-<attribute name="OC_FARNELL" value="1332281" constant="no"/>
-<attribute name="OC_NEWARK" value="71J7266" constant="no"/>
-</technology>
-<technology name="6J15">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="PIC18F66J15-I/PT" constant="no"/>
-<attribute name="OC_FARNELL" value="1556181" constant="no"/>
-<attribute name="OC_NEWARK" value="71J7268" constant="no"/>
-</technology>
-<technology name="7J10">
-<attribute name="MF" value="MICROCHIP" constant="no"/>
-<attribute name="MPN" value="PIC18F67J10-I/PT" constant="no"/>
-<attribute name="OC_FARNELL" value="1332283" constant="no"/>
-<attribute name="OC_NEWARK" value="71J7273" constant="no"/>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4445,432 +4869,163 @@ Source: http://www.microchip.com/ .. 39663c.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<library name="diy-modules">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.0.0 (2015-Feb-02)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;&lt;a href="http://diymodules.org"&gt;&lt;img src="http://diymodules.org/img/diymodules-page-logo.png" alt="DIYmodules.org"&gt;&lt;/a&gt;&lt;/center&gt;</description>
 <packages>
-</packages>
-<symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="ArduinoNanoV30">
-<packages>
-<package name="ARDUINO_NANO">
-<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;
-
-&lt;p&gt;The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;</description>
-<hole x="-22.86" y="-7.62" drill="1.778"/>
-<pad name="1" x="-20.32" y="-7.62" drill="0.8" shape="square"/>
-<pad name="2" x="-17.78" y="-7.62" drill="0.8"/>
-<pad name="3" x="-15.24" y="-7.62" drill="0.8"/>
-<pad name="4" x="-12.7" y="-7.62" drill="0.8"/>
-<pad name="5" x="-10.16" y="-7.62" drill="0.8"/>
-<pad name="6" x="-7.62" y="-7.62" drill="0.8"/>
-<pad name="7" x="-5.08" y="-7.62" drill="0.8"/>
-<pad name="8" x="-2.54" y="-7.62" drill="0.8"/>
-<pad name="9" x="0" y="-7.62" drill="0.8"/>
-<pad name="10" x="2.54" y="-7.62" drill="0.8"/>
-<pad name="11" x="5.08" y="-7.62" drill="0.8"/>
-<pad name="12" x="7.62" y="-7.62" drill="0.8"/>
-<pad name="13" x="10.16" y="-7.62" drill="0.8"/>
-<pad name="14" x="12.7" y="-7.62" drill="0.8"/>
-<pad name="15" x="15.24" y="-7.62" drill="0.8"/>
-<pad name="16" x="15.24" y="7.62" drill="0.8"/>
-<pad name="17" x="12.7" y="7.62" drill="0.8"/>
-<pad name="18" x="10.16" y="7.62" drill="0.8"/>
-<pad name="19" x="7.62" y="7.62" drill="0.8"/>
-<pad name="20" x="5.08" y="7.62" drill="0.8"/>
-<pad name="21" x="2.54" y="7.62" drill="0.8"/>
-<pad name="22" x="0" y="7.62" drill="0.8"/>
-<pad name="23" x="-2.54" y="7.62" drill="0.8"/>
-<pad name="24" x="-5.08" y="7.62" drill="0.8"/>
-<pad name="25" x="-7.62" y="7.62" drill="0.8"/>
-<pad name="26" x="-10.16" y="7.62" drill="0.8"/>
-<pad name="27" x="-12.7" y="7.62" drill="0.8"/>
-<pad name="28" x="-15.24" y="7.62" drill="0.8"/>
-<pad name="29" x="-17.78" y="7.62" drill="0.8"/>
-<pad name="30" x="-20.32" y="7.62" drill="0.8"/>
-<hole x="-22.86" y="7.62" drill="1.778"/>
-<hole x="17.78" y="7.62" drill="1.778"/>
-<hole x="17.78" y="-7.62" drill="1.778"/>
-<wire x1="-24.13" y1="8.89" x2="17.78" y2="8.89" width="0.127" layer="21"/>
-<wire x1="17.78" y1="8.89" x2="19.05" y2="8.89" width="0.127" layer="21"/>
-<wire x1="19.05" y1="8.89" x2="19.05" y2="7.62" width="0.127" layer="21"/>
-<wire x1="19.05" y1="7.62" x2="19.05" y2="3.81" width="0.127" layer="21"/>
-<wire x1="19.05" y1="3.81" x2="19.05" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-3.81" x2="19.05" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-7.62" x2="19.05" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="19.05" y1="-8.89" x2="17.78" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="17.78" y1="-8.89" x2="-22.86" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-22.86" y1="-8.89" x2="-24.13" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-24.13" y1="-8.89" x2="-24.13" y2="-7.62" width="0.127" layer="21"/>
-<wire x1="-24.13" y1="-7.62" x2="-24.13" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-24.13" y1="2.54" x2="-24.13" y2="8.89" width="0.127" layer="21"/>
-<wire x1="-24.13" y1="2.54" x2="-25.4" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-25.4" y1="2.54" x2="-25.4" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-2.54" x2="-19.05" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="2.54" x2="-24.13" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-19.05" y1="-2.54" x2="-25.4" y2="-2.54" width="0.127" layer="21"/>
-<text x="-17.78" y="0" size="1.27" layer="21" font="vector">&gt;NAME</text>
-<text x="-17.78" y="-2.54" size="1.27" layer="21" font="vector">&gt;VALUE</text>
-<circle x="0" y="0" radius="1.79605" width="0.127" layer="21"/>
-<text x="2.54" y="0" size="0.8128" layer="21" font="vector" rot="R90" align="center">Reset</text>
-<text x="-20.32" y="-6.35" size="1.016" layer="21" font="vector">1</text>
-<text x="-21.59" y="0" size="0.6096" layer="21" font="vector" rot="R270" align="center">Mini-B
-USB</text>
-<wire x1="19.05" y1="3.81" x2="13.97" y2="3.81" width="0.127" layer="21"/>
-<wire x1="13.97" y1="3.81" x2="13.97" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="13.97" y1="-3.81" x2="19.05" y2="-3.81" width="0.127" layer="21"/>
-<circle x="17.78" y="-2.54" radius="0.8" width="0.127" layer="21"/>
-<circle x="17.78" y="0" radius="0.8" width="0.127" layer="21"/>
-<circle x="17.78" y="2.54" radius="0.8" width="0.127" layer="21"/>
-<circle x="15.24" y="2.54" radius="0.8" width="0.127" layer="21"/>
-<circle x="17.78" y="0" radius="0.8" width="0.127" layer="21"/>
-<circle x="15.24" y="0" radius="0.8" width="0.127" layer="21"/>
-<circle x="15.24" y="-2.54" radius="0.8" width="0.127" layer="21"/>
-<text x="12.7" y="1.27" size="0.8128" layer="21" font="vector" rot="SR270">ICSP</text>
-<text x="17.78" y="-4.445" size="1.016" layer="21" font="vector" rot="SR270">1</text>
-<polygon width="0.127" layer="21">
-<vertex x="15.24" y="6.35"/>
-<vertex x="13.97" y="5.08"/>
-<vertex x="16.51" y="5.08"/>
-</polygon>
-<polygon width="0.127" layer="21">
-<vertex x="12.7" y="5.08"/>
-<vertex x="13.97" y="6.35"/>
-<vertex x="11.43" y="6.35"/>
-</polygon>
-<text x="-22.86" y="-1.27" size="0.0508" layer="21" font="vector" ratio="1" rot="R90">This library was created by Esp. Marco-Luis SALCEDO TOVAR.
-Please report any errors or suggestions to: YV1HX@CANTV.NET
-Thanks you!!!</text>
-<wire x1="-24.13" y1="7.62" x2="-21.59" y2="7.62" width="0.015875" layer="21"/>
-<wire x1="-22.86" y1="8.89" x2="-22.86" y2="6.35" width="0.015875" layer="21"/>
-<wire x1="-24.13" y1="-7.62" x2="-21.59" y2="-7.62" width="0.015875" layer="21"/>
-<wire x1="-22.86" y1="-6.35" x2="-22.86" y2="-8.89" width="0.015875" layer="21"/>
-<wire x1="17.78" y1="-8.89" x2="17.78" y2="-6.35" width="0.015875" layer="21"/>
-<wire x1="16.51" y1="-7.62" x2="19.05" y2="-7.62" width="0.015875" layer="21"/>
-<wire x1="17.78" y1="6.35" x2="17.78" y2="8.89" width="0.015875" layer="21"/>
-<wire x1="16.51" y1="7.62" x2="19.05" y2="7.62" width="0.015875" layer="21"/>
+<package name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips</description>
+<wire x1="-19.304" y1="11.684" x2="19.304" y2="11.684" width="0.127" layer="21"/>
+<wire x1="19.05" y1="4.445" x2="19.05" y2="3.175" width="0.127" layer="21"/>
+<wire x1="19.05" y1="1.905" x2="19.05" y2="0.635" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-0.635" x2="19.05" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-3.175" x2="19.05" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="19.304" y1="-11.684" x2="-19.304" y2="-11.684" width="0.127" layer="21"/>
+<hole x="-11.43" y="-9.525" drill="2.2"/>
+<hole x="-11.43" y="9.525" drill="2.2"/>
+<pad name="J1.1" x="-17.78" y="6.35" drill="1" shape="square"/>
+<pad name="J1.2" x="-17.78" y="3.81" drill="1"/>
+<pad name="J1.3" x="-17.78" y="1.27" drill="1"/>
+<pad name="J1.4" x="-17.78" y="-1.27" drill="1"/>
+<pad name="J1.5" x="-17.78" y="-3.81" drill="1"/>
+<pad name="J2.1" x="17.78" y="3.81" drill="1" shape="square"/>
+<pad name="J2.2" x="17.78" y="1.27" drill="1"/>
+<pad name="J2.3" x="17.78" y="-1.27" drill="1"/>
+<pad name="J2.4" x="17.78" y="-3.81" drill="1"/>
+<text x="0" y="12.7" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-12.7" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<pad name="J1.6" x="-17.78" y="-6.35" drill="1"/>
+<hole x="15.24" y="9.525" drill="2.2"/>
+<wire x1="-19.05" y1="-6.985" x2="-19.05" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-4.445" x2="-19.05" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-1.905" x2="-19.05" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="0.635" x2="-19.05" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="3.175" x2="-19.05" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="5.715" x2="-19.05" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="6.985" x2="-18.415" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="7.62" x2="-17.145" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="7.62" x2="-16.51" y2="6.985" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="6.985" x2="-16.51" y2="5.715" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="5.715" x2="-17.145" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="5.08" x2="-16.51" y2="4.445" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="4.445" x2="-16.51" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="3.175" x2="-17.145" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="2.54" x2="-16.51" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="1.905" x2="-16.51" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="0.635" x2="-17.145" y2="0" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="0" x2="-16.51" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-0.635" x2="-16.51" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-1.905" x2="-17.145" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-2.54" x2="-16.51" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-3.175" x2="-16.51" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-4.445" x2="-17.145" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-5.08" x2="-16.51" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-5.715" x2="-16.51" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-6.985" x2="-17.145" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-17.145" y1="-7.62" x2="-18.415" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-7.62" x2="-19.05" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-5.715" x2="-18.415" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-5.08" x2="-19.05" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-3.175" x2="-18.415" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="-2.54" x2="-19.05" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-0.635" x2="-18.415" y2="0" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="0" x2="-19.05" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="1.905" x2="-18.415" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="2.54" x2="-19.05" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="4.445" x2="-18.415" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-18.415" y1="5.08" x2="-19.05" y2="5.715" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-4.445" x2="18.415" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-5.08" x2="17.145" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="17.145" y1="-5.08" x2="16.51" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-4.445" x2="16.51" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-3.175" x2="17.145" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="17.145" y1="-2.54" x2="16.51" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-1.905" x2="16.51" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="16.51" y1="-0.635" x2="17.145" y2="0" width="0.127" layer="21"/>
+<wire x1="17.145" y1="0" x2="16.51" y2="0.635" width="0.127" layer="21"/>
+<wire x1="16.51" y1="0.635" x2="16.51" y2="1.905" width="0.127" layer="21"/>
+<wire x1="16.51" y1="1.905" x2="17.145" y2="2.54" width="0.127" layer="21"/>
+<wire x1="17.145" y1="2.54" x2="16.51" y2="3.175" width="0.127" layer="21"/>
+<wire x1="16.51" y1="3.175" x2="16.51" y2="4.445" width="0.127" layer="21"/>
+<wire x1="16.51" y1="4.445" x2="17.145" y2="5.08" width="0.127" layer="21"/>
+<wire x1="17.145" y1="5.08" x2="18.415" y2="5.08" width="0.127" layer="21"/>
+<wire x1="18.415" y1="5.08" x2="19.05" y2="4.445" width="0.127" layer="21"/>
+<wire x1="19.05" y1="3.175" x2="18.415" y2="2.54" width="0.127" layer="21"/>
+<wire x1="18.415" y1="2.54" x2="19.05" y2="1.905" width="0.127" layer="21"/>
+<wire x1="19.05" y1="0.635" x2="18.415" y2="0" width="0.127" layer="21"/>
+<wire x1="18.415" y1="0" x2="19.05" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="19.05" y1="-1.905" x2="18.415" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-2.54" x2="19.05" y2="-3.175" width="0.127" layer="21"/>
+<text x="-15.875" y="6.35" size="1.27" layer="21" align="center-left">32K</text>
+<text x="-15.875" y="3.81" size="1.27" layer="21" align="center-left">SQW</text>
+<text x="-15.875" y="1.27" size="1.27" layer="21" align="center-left">SCL</text>
+<text x="-15.875" y="-1.27" size="1.27" layer="21" align="center-left">SDA</text>
+<text x="-15.875" y="-3.81" size="1.27" layer="21" align="center-left">VCC</text>
+<text x="-15.875" y="-6.35" size="1.27" layer="21" align="center-left">GND</text>
+<text x="15.875" y="3.81" size="1.27" layer="21" align="center-right">SCL</text>
+<text x="15.875" y="1.27" size="1.27" layer="21" align="center-right">SDA</text>
+<text x="15.875" y="-1.27" size="1.27" layer="21" align="center-right">VCC</text>
+<text x="15.875" y="-3.81" size="1.27" layer="21" align="center-right">GND</text>
+<wire x1="-19.304" y1="11.684" x2="-19.304" y2="-11.684" width="0.127" layer="21"/>
+<wire x1="19.304" y1="11.684" x2="19.304" y2="-11.684" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="ARDUINO_NANO">
-<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Overview:&lt;/b&gt;&lt;br&gt;
-
-&lt;p&gt;The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x) or ATmega168 (Arduino Nano 2.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.&lt;br&gt;
-The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;
-
-&lt;table border="1" style="width:auto"&gt;
-&lt;tr&gt;
-  &lt;th colspan="2"&gt;&lt;b&gt;General specifications:&lt;/b&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;th&gt;Item&lt;/th&gt;
-    &lt;th&gt;Value&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Microcontroller&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;Atmel ATmega168 or ATmega328&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Operating Voltage (logic level)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;5 V&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Input Voltage (recommended)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;7-12 V&lt;/center&gt;&lt;/td&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Input Voltage (limits)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;6-20 V&lt;/center&gt;&lt;/td&gt;		
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Digital I/O Pins&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;14 (of which 6 provide PWM output)&lt;/center&gt;&lt;/td&gt;		
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Analog Input Pins&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;DC Current per I/O Pin&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;40 mA&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Flash Memory&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;16 KB (ATmega168) or 32 KB (ATmega328) of which 2 KB used by bootloader&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;SRAM&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;1 KB (ATmega168) or 2 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;EEPROM&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;512 bytes (ATmega168) or 1 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Clock Speed&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;16 MHz&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Dimensions (Inches) &lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;0.73" x 1.70"&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Dimensions (mm) &lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;18mm x 45mm&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Overall height&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;About 9 mm (not including pins)&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Weigth&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;5 g&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Power:&lt;/b&gt;&lt;br&gt;
-
-The Arduino Nano can be powered via the Mini-B USB connection, 6-20V unregulated external power supply (pin 30), or 5V regulated external power supply (pin 27).&lt;br&gt;
-The power source is automatically selected to the highest voltage source.&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Memory:&lt;/b&gt;&lt;br&gt;
-
-The ATmega168 has 16 KB of flash memory for storing code (of which 2 KB is used for the bootloader); the ATmega328 has 32 KB, (also with 2 KB used for the bootloader).&lt;br&gt;
-The ATmega168 has 1 KB of SRAM and 512 bytes of EEPROM (which can be read and written with the EEPROM library); the ATmega328 has 2 KB of SRAM and 1 KB of EEPROM.&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Input and Output:&lt;/b&gt;&lt;br&gt;
-
-Each of the 14 digital pins on the Nano can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions.&lt;br&gt;
-They operate at 5 volts.&lt;br&gt;
-Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions.&lt;br&gt;&lt;br&gt;
-
-&lt;a href="https://www.arduino.cc/en/Main/ArduinoBoardNano"&gt;Visit Arduino - ArduinoBoardNano&lt;/a&gt;</description>
-<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="25.4" x2="-5.08" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="25.4" x2="5.08" y2="25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="25.4" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<pin name="D1/TX" x="-20.32" y="22.86" length="middle"/>
-<pin name="D0/RX" x="-20.32" y="20.32" length="middle"/>
-<pin name="!RESET@1" x="-20.32" y="17.78" length="middle" direction="in" function="dot"/>
-<pin name="GND@1" x="-20.32" y="15.24" length="middle" direction="pwr"/>
-<pin name="D2/INT0" x="-20.32" y="12.7" length="middle"/>
-<pin name="D3/INT1" x="-20.32" y="10.16" length="middle"/>
-<pin name="D4/T0" x="-20.32" y="7.62" length="middle"/>
-<pin name="D5/T1" x="-20.32" y="5.08" length="middle"/>
-<pin name="D6/AIN0" x="-20.32" y="2.54" length="middle"/>
-<pin name="D7/AIN1" x="-20.32" y="0" length="middle"/>
-<pin name="D8/CLK0" x="-20.32" y="-2.54" length="middle"/>
-<pin name="D9/OC1A" x="-20.32" y="-5.08" length="middle"/>
-<pin name="D10/OC1B/!SS" x="-20.32" y="-7.62" length="middle"/>
-<pin name="D11/MOSI" x="-20.32" y="-10.16" length="middle"/>
-<pin name="D12/MISO" x="-20.32" y="-12.7" length="middle"/>
-<pin name="SCK/D13" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="3V3" x="20.32" y="-10.16" length="middle" direction="out" rot="R180"/>
-<pin name="AREF" x="20.32" y="-7.62" length="middle" direction="in" rot="R180"/>
-<pin name="ADC0/A0" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="ADC1/A1" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="ADC2/A2" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="ADC3/A3" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="ADC4/SDA/A4" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="ADC5/SCL/A5" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="ADC6/A6" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="ADC7/A7" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="5V" x="20.32" y="15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="!RESET@2" x="20.32" y="17.78" length="middle" direction="in" function="dot" rot="R180"/>
-<pin name="GND@2" x="20.32" y="20.32" length="middle" direction="pwr" rot="R180"/>
-<pin name="VIN" x="20.32" y="22.86" length="middle" direction="pwr" rot="R180"/>
-<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-16.51" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-16.51" x2="2.54" y2="-16.51" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-16.51" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
-<text x="0" y="-12.7" size="0.8128" layer="94" font="vector" align="center">Mini-B
-USB</text>
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-<text x="0" y="0" size="0.8128" layer="94" font="vector" rot="R180" align="center">RESET
-BUTTON</text>
-<text x="-15.24" y="-20.32" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-5.08" y1="25.4" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="20.32" x2="5.08" y2="20.32" width="0.254" layer="94"/>
-<wire x1="5.08" y1="20.32" x2="5.08" y2="25.4" width="0.254" layer="94"/>
-<text x="-2.54" y="17.78" size="1.6764" layer="94" font="vector">ICSP</text>
-<circle x="-2.54" y="21.59" radius="0.762" width="0.254" layer="94"/>
-<circle x="0" y="24.13" radius="0.762" width="0.254" layer="94"/>
-<circle x="2.54" y="24.13" radius="0.762" width="0.254" layer="94"/>
-<circle x="-2.54" y="24.13" radius="0.762" width="0.254" layer="94"/>
-<circle x="2.54" y="21.59" radius="0.762" width="0.254" layer="94"/>
-<circle x="0" y="21.59" radius="0.762" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="-15.24" y="22.86"/>
-<vertex x="-13.97" y="24.13"/>
-<vertex x="-13.97" y="21.59"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-15.24" y="21.59"/>
-<vertex x="-13.97" y="20.32"/>
-<vertex x="-15.24" y="19.05"/>
-</polygon>
-<text x="6.35" y="24.13" size="0.8128" layer="94" font="vector" align="bottom-right">1</text>
+<symbol name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips</description>
+<pin name="VCC.1" x="-17.78" y="-5.08" length="middle" direction="pwr"/>
+<pin name="SDA.1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="SCL.1" x="-17.78" y="0" length="middle"/>
+<pin name="SQW" x="-17.78" y="2.54" length="middle"/>
+<pin name="32K" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND.2" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC.2" x="17.78" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA.2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SCL.2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND.1" x="-17.78" y="-7.62" length="middle" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ARDUINO_NANO" prefix="ARDUINO_NANO" uservalue="yes">
-<description>&lt;b&gt;Arduino Nano V3.0 Module&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Overview:&lt;/b&gt;&lt;br&gt;
-
-&lt;p&gt;The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x) or ATmega168 (Arduino Nano 2.x). &lt;br&gt;It has more or less the same functionality of the Arduino Duemilanove, but in a different package.&lt;br&gt;
-It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one.&lt;br&gt;
-The Nano was designed and is being produced by &lt;a href="http://www.gravitech.us/arna30wiatp.html"&gt;Gravitech&lt;/a&gt;.&lt;/p&gt;&lt;br&gt;
-
-&lt;table border="1" style="width:auto"&gt;
-&lt;tr&gt;
-  &lt;th colspan="2"&gt;&lt;b&gt;General specifications:&lt;/b&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;th&gt;Item&lt;/th&gt;
-    &lt;th&gt;Value&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Microcontroller&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;Atmel ATmega168 or ATmega328&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Operating Voltage (logic level)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;5 V&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Input Voltage (recommended)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;7-12 V&lt;/center&gt;&lt;/td&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Input Voltage (limits)&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;6-20 V&lt;/center&gt;&lt;/td&gt;		
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Digital I/O Pins&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;14 (of which 6 provide PWM output)&lt;/center&gt;&lt;/td&gt;		
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Analog Input Pins&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;8&lt;/center&gt;&lt;/td&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;DC Current per I/O Pin&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;40 mA&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Flash Memory&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;16 KB (ATmega168) or 32 KB (ATmega328) of which 2 KB used by bootloader&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;SRAM&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;1 KB (ATmega168) or 2 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;		
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;EEPROM&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;512 bytes (ATmega168) or 1 KB (ATmega328)&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Clock Speed&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;16 MHz&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Dimensions (Inches) &lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;0.73" x 1.70"&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Dimensions (mm) &lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;18mm x 45mm&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Overall height&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;About 9 mm (not including pins)&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;center&gt;Weigth&lt;/center&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;center&gt;5 g&lt;/center&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;br&gt;&lt;br&gt;
-
-&lt;b&gt;Power:&lt;/b&gt;&lt;br&gt;
-
-&lt;p&gt;The Arduino Nano can be powered via the Mini-B USB connection, 6-20V unregulated external power supply (pin 30), or 5V regulated external power supply (pin 27).&lt;br&gt;
-The power source is automatically selected to the highest voltage source.&lt;/p&gt;&lt;br&gt;
-
-&lt;b&gt;Memory:&lt;/b&gt;&lt;br&gt;
-
-&lt;p&gt;The ATmega168 has 16 KB of flash memory for storing code (of which 2 KB is used for the bootloader); the ATmega328 has 32 KB, (also with 2 KB used for the bootloader).&lt;br&gt;
-The ATmega168 has 1 KB of SRAM and 512 bytes of EEPROM (which can be read and written with the EEPROM library); the ATmega328 has 2 KB of SRAM and 1 KB of EEPROM.&lt;/p&gt;&lt;br&gt;
-
-&lt;b&gt;Input and Output:&lt;/b&gt;&lt;br&gt;
-
-&lt;p&gt;Each of the 14 digital pins on the Nano can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions.&lt;br&gt;
-They operate at 5 volts.&lt;br&gt;
-Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions.&lt;/p&gt;&lt;br&gt;
-
-&lt;a href="https://www.arduino.cc/en/Main/ArduinoBoardNano"&gt;Visit Arduino - ArduinoBoardNano&lt;/a&gt;</description>
+<deviceset name="RTC-DS3231-AT24C32">
+<description>&lt;b&gt;RTC Module with Battery and EEPROM&lt;/b&gt; based on &lt;b&gt;DS3231&lt;/b&gt; and &lt;b&gt;AT24C32&lt;/b&gt; chips
+&lt;p&gt;Tutorial can be found here:&lt;br /&gt;
+&lt;a href="https://edwardmallon.wordpress.com/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/"&gt;https://edwardmallon.wordpress.com/2014/05/21/using-a-cheap-3-ds3231-rtc-at24c32-eeprom-from-ebay/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/DS3231+AT24C32+module"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=RTC-DS3231-AT24C32"&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="ARDUINO_NANO" x="0" y="0"/>
+<gate name="G$1" symbol="RTC-DS3231-AT24C32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ARDUINO_NANO">
+<device name="" package="RTC-DS3231-AT24C32">
 <connects>
-<connect gate="G$1" pin="!RESET@1" pad="18"/>
-<connect gate="G$1" pin="!RESET@2" pad="13"/>
-<connect gate="G$1" pin="3V3" pad="2"/>
-<connect gate="G$1" pin="5V" pad="12"/>
-<connect gate="G$1" pin="ADC0/A0" pad="4"/>
-<connect gate="G$1" pin="ADC1/A1" pad="5"/>
-<connect gate="G$1" pin="ADC2/A2" pad="6"/>
-<connect gate="G$1" pin="ADC3/A3" pad="7"/>
-<connect gate="G$1" pin="ADC4/SDA/A4" pad="8"/>
-<connect gate="G$1" pin="ADC5/SCL/A5" pad="9"/>
-<connect gate="G$1" pin="ADC6/A6" pad="10"/>
-<connect gate="G$1" pin="ADC7/A7" pad="11"/>
-<connect gate="G$1" pin="AREF" pad="3"/>
-<connect gate="G$1" pin="D0/RX" pad="17"/>
-<connect gate="G$1" pin="D1/TX" pad="16"/>
-<connect gate="G$1" pin="D10/OC1B/!SS" pad="28"/>
-<connect gate="G$1" pin="D11/MOSI" pad="29"/>
-<connect gate="G$1" pin="D12/MISO" pad="30"/>
-<connect gate="G$1" pin="D2/INT0" pad="20"/>
-<connect gate="G$1" pin="D3/INT1" pad="21"/>
-<connect gate="G$1" pin="D4/T0" pad="22"/>
-<connect gate="G$1" pin="D5/T1" pad="23"/>
-<connect gate="G$1" pin="D6/AIN0" pad="24"/>
-<connect gate="G$1" pin="D7/AIN1" pad="25"/>
-<connect gate="G$1" pin="D8/CLK0" pad="26"/>
-<connect gate="G$1" pin="D9/OC1A" pad="27"/>
-<connect gate="G$1" pin="GND@1" pad="19"/>
-<connect gate="G$1" pin="GND@2" pad="14"/>
-<connect gate="G$1" pin="SCK/D13" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="15"/>
+<connect gate="G$1" pin="32K" pad="J1.1"/>
+<connect gate="G$1" pin="GND.1" pad="J1.6"/>
+<connect gate="G$1" pin="GND.2" pad="J2.4"/>
+<connect gate="G$1" pin="SCL.1" pad="J1.3"/>
+<connect gate="G$1" pin="SCL.2" pad="J2.1"/>
+<connect gate="G$1" pin="SDA.1" pad="J1.4"/>
+<connect gate="G$1" pin="SDA.2" pad="J2.2"/>
+<connect gate="G$1" pin="SQW" pad="J1.2"/>
+<connect gate="G$1" pin="VCC.1" pad="J1.5"/>
+<connect gate="G$1" pin="VCC.2" pad="J2.3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4886,123 +5041,169 @@ Each pin can provide or receive a maximum of 40 mA and has an internal pull-up r
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="1.016" drill="0">
+<clearance class="0" value="0.508"/>
 </class>
 </classes>
 <parts>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="IC1" library="microchip" library_urn="urn:adsk.eagle:library:294" deviceset="PIC18F6*" device="" package3d_urn="urn:adsk.eagle:package:20805/1" technology="7J10"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M1406" package3d_urn="urn:adsk.eagle:package:26081/1"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="ARDUINO_NANO1" library="ArduinoNanoV30" deviceset="ARDUINO_NANO" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
+<part name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="2.2K"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:25939/1" value="2.2K"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J1" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0303" device="" package3d_urn="urn:adsk.eagle:package:7493/1"/>
+<part name="VALVULA2" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1"/>
+<part name="VALVULA1" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1"/>
+<part name="U$1" library="diy-modules" deviceset="RTC-DS3231-AT24C32" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="30.48" y="40.64" size="1.778" layer="94">RIEGO AUTONOMO</text>
+<text x="30.48" y="38.1" size="1.27" layer="94">By Pablo Horno Pérez</text>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="-33.02" y="25.4" rot="R180"/>
-<instance part="R2" gate="G$1" x="-33.02" y="22.86" rot="R180"/>
-<instance part="R3" gate="G$1" x="-33.02" y="20.32" rot="R180"/>
-<instance part="R4" gate="G$1" x="-33.02" y="17.78" rot="R180"/>
-<instance part="IC1" gate="G$1" x="35.56" y="7.62" rot="R180"/>
-<instance part="R5" gate="G$1" x="-33.02" y="15.24" rot="R180"/>
-<instance part="R6" gate="G$1" x="-33.02" y="12.7" rot="R180"/>
-<instance part="R7" gate="G$1" x="-33.02" y="10.16" rot="R180"/>
-<instance part="R8" gate="G$1" x="-33.02" y="7.62" rot="R180"/>
-<instance part="GND1" gate="1" x="-43.18" y="15.24" rot="R270"/>
-<instance part="ARDUINO_NANO1" gate="G$1" x="-91.44" y="0"/>
+<instance part="ARDUINO_NANO1" gate="G$1" x="0" y="0"/>
+<instance part="GND1" gate="1" x="73.66" y="-25.4"/>
+<instance part="GND2" gate="1" x="35.56" y="0" rot="R270"/>
+<instance part="Q1" gate="1" x="-45.72" y="0" rot="R180"/>
+<instance part="Q2" gate="1" x="-45.72" y="12.7" rot="MR0"/>
+<instance part="R1" gate="G$1" x="-35.56" y="0" rot="R180"/>
+<instance part="R2" gate="G$1" x="-35.56" y="12.7" rot="R180"/>
+<instance part="GND4" gate="1" x="-58.42" y="6.35" rot="R270"/>
+<instance part="J1" gate="G$1" x="76.2" y="-12.7" rot="R270"/>
+<instance part="VALVULA2" gate="-1" x="-43.18" y="-17.78" rot="R90"/>
+<instance part="VALVULA2" gate="-2" x="-48.26" y="-17.78" rot="R90"/>
+<instance part="VALVULA1" gate="-1" x="-43.18" y="30.48" rot="R270"/>
+<instance part="VALVULA1" gate="-2" x="-48.26" y="30.48" rot="R270"/>
+<instance part="U$1" gate="G$1" x="66.04" y="7.62"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="12V" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RC2/ECCP1/P1A"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="25.4" x2="-7.62" y2="25.4" width="0.1524" layer="91"/>
+<label x="78.74" y="-25.4" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-20.32" x2="78.74" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RC3/SCK1/SCL1"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="VIN"/>
+<wire x1="20.32" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<label x="22.86" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="N$3" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RC4/SDI1/SDA1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="VALVULA2" gate="-1" pin="KL"/>
+<wire x1="-43.18" y1="-12.7" x2="-43.18" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-43.18" y="-10.16" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
-</net>
-<net name="N$4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="RC5/SDO1"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="RB7/KBI2/PGD"/>
-<wire x1="-27.94" y1="15.24" x2="-20.32" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="OSC1/CLKI"/>
-<wire x1="-20.32" y1="15.24" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="10.16" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="15.24" x2="-20.32" y2="10.16" width="0.1524" layer="91"/>
-<junction x="-20.32" y="15.24"/>
-<junction x="-20.32" y="10.16"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="-27.94" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="OSC2/CLKO"/>
-<wire x1="-27.94" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="VALVULA1" gate="-1" pin="KL"/>
+<wire x1="-43.18" y1="25.4" x2="-43.18" y2="22.86" width="0.1524" layer="91"/>
+<label x="-43.18" y="22.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="25.4" x2="-38.1" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="22.86" x2="-38.1" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="20.32" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="17.78" x2="-38.1" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="15.24" x2="-38.1" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="12.7" x2="-38.1" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="10.16" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="15.24" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="73.66" y1="-22.86" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="48.26" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND.1"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="1" pin="E"/>
+<wire x1="-48.26" y1="5.08" x2="-48.26" y2="6.35" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="1" pin="E"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-48.26" y1="6.35" x2="-48.26" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="6.35" x2="-48.26" y2="6.35" width="0.1524" layer="91"/>
+<junction x="-48.26" y="6.35"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<wire x1="48.26" y1="2.54" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
+<label x="45.72" y="2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="VCC.1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="ADC4/SDA/A4"/>
+<wire x1="20.32" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SDA.1"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="ADC5/SCL/A5"/>
+<wire x1="48.26" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SCL.1"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D5/T1"/>
+<wire x1="-20.32" y1="5.08" x2="-25.4" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="5.08" x2="-25.4" y2="0" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-25.4" y1="0" x2="-30.48" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="ARDUINO_NANO1" gate="G$1" pin="D4/T0"/>
+<wire x1="-20.32" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="7.62" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-25.4" y1="12.7" x2="-30.48" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="Q2" gate="1" pin="B"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="12.7" x2="-40.64" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="Q2" gate="1" pin="C"/>
+<pinref part="VALVULA1" gate="-2" pin="KL"/>
+<wire x1="-48.26" y1="25.4" x2="-48.26" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="Q1" gate="1" pin="B"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="0" x2="-40.64" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="Q1" gate="1" pin="C"/>
+<pinref part="VALVULA2" gate="-2" pin="KL"/>
+<wire x1="-48.26" y1="-5.08" x2="-48.26" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,-48.26,38.1,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="202,1,-7.62,12.7,ARDUINO_NANO1,AREF,,,,"/>
+<approved hash="204,1,-7.62,35.56,ARDUINO_NANO1,5V,,,,"/>
+<approved hash="202,1,-7.62,38.1,ARDUINO_NANO1,!RESET,,,,"/>
+<approved hash="104,1,-7.62,43.18,ARDUINO_NANO1,VIN,12V,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
